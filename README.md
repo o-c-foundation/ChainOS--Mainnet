@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="https://raw.githubusercontent.com/o-c-foundation/ChainOS--Mainnet/main/assets/ChainOS-logo.svg" width="400" />
+  <img src="https://media.discordapp.net/attachments/1158593497302048768/1372634201307877397/Screenshot_2025-05-15_113538.png?ex=68277cb7&is=68262b37&hm=3518ccf88b2dfb915010c20b94e7005b119cab8c311043fcfbac4da7cbe99317&=&format=webp&quality=lossless&width=909&height=511" />
   
   <hr height="0.5px" />
   

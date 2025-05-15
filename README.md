@@ -26,28 +26,28 @@ ChainOS implements a multi-layered architecture that facilitates horizontal scal
 
 ```
 ┌───────────────────────────────────────────────────────────┐
-│                    Application Layer                       │
+│                    Application Layer                      │
 │   ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐   │
-│   │ Transaction │  │   Smart     │  │ State Transition │   │
+│   │ Transaction │  │   Smart     │  │State Transition │   │
 │   │  Execution  │  │  Contracts  │  │     Engine      │   │
 │   └─────────────┘  └─────────────┘  └─────────────────┘   │
 ├───────────────────────────────────────────────────────────┤
-│                    Consensus Layer                         │
+│                    Consensus Layer                        │
 │   ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐   │
-│   │  Tendermint │  │ Probabilistic│  │  Byzantine Fault │   │
-│   │     BFT     │  │  Finality   │  │     Tolerance    │   │
+│   │  Tendermint │  │Probabilistic│  │ Byzantine Fault │   │
+│   │     BFT     │  │  Finality   │  │    Tolerance    │   │
 │   └─────────────┘  └─────────────┘  └─────────────────┘   │
 ├───────────────────────────────────────────────────────────┤
-│                    Networking Layer                        │
+│                    Networking Layer                       │
 │   ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐   │
 │   │  P2P Mesh   │  │  Libp2p     │  │  Gossip Protocol│   │
-│   │  Network    │  │  Subsystem  │  │   Implementation │   │
+│   │  Network    │  │  Subsystem  │  │  Implementation │   │
 │   └─────────────┘  └─────────────┘  └─────────────────┘   │
 ├───────────────────────────────────────────────────────────┤
-│                    Persistence Layer                       │
+│                    Persistence Layer                      │
 │   ┌─────────────┐  ┌─────────────┐  ┌─────────────────┐   │
 │   │  LevelDB    │  │ Merkleized  │  │  IAVL+ Tree     │   │
-│   │  Storage    │  │   State     │  │  Implementation  │   │
+│   │  Storage    │  │   State     │  │  Implementation │   │
 │   └─────────────┘  └─────────────┘  └─────────────────┘   │
 └───────────────────────────────────────────────────────────┘
 ```

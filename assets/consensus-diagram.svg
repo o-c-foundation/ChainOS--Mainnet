@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="800px" height="400px" viewBox="0 0 800 400" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <style>
+        .box { fill: #333; stroke: #8a2be2; stroke-width: 2px; }
+        .arrow { fill: none; stroke: #8a2be2; stroke-width: 2px; }
+        .text { font-family: Arial, sans-serif; fill: white; text-anchor: middle; }
+        .phase-text { font-size: 14px; font-weight: bold; }
+        .details-text { font-size: 10px; }
+    </style>
+    <rect width="800" height="400" fill="#111111"/>
+    
+    <!-- Phase 1 -->
+    <rect x="100" y="50" width="120" height="60" rx="5" class="box"/>
+    <text x="160" y="75" class="text phase-text">Propose</text>
+    <text x="160" y="95" class="text details-text">Block Proposal</text>
+    
+    <!-- Phase 2 -->
+    <rect x="280" y="50" width="120" height="60" rx="5" class="box"/>
+    <text x="340" y="75" class="text phase-text">Pre-Vote</text>
+    <text x="340" y="95" class="text details-text">Validation Check</text>
+    
+    <!-- Phase 3 -->
+    <rect x="460" y="50" width="120" height="60" rx="5" class="box"/>
+    <text x="520" y="75" class="text phase-text">Pre-Commit</text>
+    <text x="520" y="95" class="text details-text">Intent to Commit</text>
+    
+    <!-- Phase 4 -->
+    <rect x="640" y="50" width="120" height="60" rx="5" class="box"/>
+    <text x="700" y="75" class="text phase-text">Commit</text>
+    <text x="700" y="95" class="text details-text">Final Commit</text>
+    
+    <!-- Arrows -->
+    <path d="M220,80 L280,80" class="arrow" marker-end="url(#arrow)"/>
+    <path d="M400,80 L460,80" class="arrow" marker-end="url(#arrow)"/>
+    <path d="M580,80 L640,80" class="arrow" marker-end="url(#arrow)"/>
+    
+    <!-- Parallel Processing -->
+    <rect x="100" y="180" width="660" height="120" rx="5" class="box"/>
+    <text x="430" y="210" class="text phase-text">Parallel Transaction Execution</text>
+    
+    <!-- Transaction Groups -->
+    <rect x="130" y="230" width="180" height="50" rx="5" fill="#444" stroke="#4a6bff" stroke-width="2"/>
+    <text x="220" y="260" class="text details-text">Non-conflicting Txs Group 1</text>
+    
+    <rect x="340" y="230" width="180" height="50" rx="5" fill="#444" stroke="#c64aff" stroke-width="2"/>
+    <text x="430" y="260" class="text details-text">Non-conflicting Txs Group 2</text>
+    
+    <rect x="550" y="230" width="180" height="50" rx="5" fill="#444" stroke="#4affea" stroke-width="2"/>
+    <text x="640" y="260" class="text details-text">Non-conflicting Txs Group 3</text>
+    
+    <!-- Final State -->
+    <rect x="280" y="330" width="240" height="50" rx="5" class="box"/>
+    <text x="400" y="360" class="text phase-text">Final State Transition</text>
+    
+    <!-- Arrows to Final -->
+    <path d="M220,280 L350,330" class="arrow"/>
+    <path d="M430,280 L400,330" class="arrow"/>
+    <path d="M640,280 L450,330" class="arrow"/>
+    
+    <!-- Arrow definitions -->
+    <defs>
+        <marker id="arrow" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto" markerUnits="strokeWidth">
+            <path d="M0,0 L0,6 L9,3 z" fill="#8a2be2"/>
+        </marker>
+    </defs>
+</svg>

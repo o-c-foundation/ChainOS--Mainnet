@@ -149,6 +149,8 @@ A web-based block explorer application that provides real-time visualization of 
 
 ## 🚀 Validator Network
 
+Public Endpoint: http://chainos.network:26657/
+
 ChainOS operates with a network of 100 validators securing the blockchain through Delegated Proof-of-Stake consensus. Our validator infrastructure exhibits the following characteristics:
 
 - **Geographic Distribution**: Validators span 27 countries across 6 continents
